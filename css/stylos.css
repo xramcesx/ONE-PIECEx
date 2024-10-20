@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruge+Boogie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Ruge+Boogie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lilita+One&family=Ruge+Boogie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lilita+One&family=Macondo&family=Ruge+Boogie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lilita+One&family=Macondo&family=Permanent+Marker&family=Ruge+Boogie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Tiny5&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background-color: black;
+}
+header{
+    background-color: rgb(0, 0, 0);
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: row;
+}
+.parte-izquierda ul{
+    display: flex;
+    flex-direction: row;
+}
+.parte-izquierda li{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 18px;
+    font-family: "Ruge Boogie", cursive;
+    font-weight: 800;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.parte-izquierda img{
+    width: 32px;
+}
+.parte-derecha ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.parte-derecha li{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 17px 18px;
+}
+.parte-derecha li:hover{
+    background: rgba(248, 211, 0, 0.801);
+}
+.parte-derecha img{
+    width: 22px;
+}
+main{
+    background-color: rgb(255, 230, 0);
+}
+.portada{
+    background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.219), rgba(0, 0, 0, 0.568)), url("../fondos/portada.png");
+    background-size: cover;
+    height: calc(100vh - 46px);
+    display: flex;
+    align-items:start;
+    flex-direction: column;
+    justify-content:center;
+}
+.logo img{
+    width: 400px;
+    padding: 0 40px;
+    margin-top: -100px;
+    margin-bottom: 20px;
+}
+.descripcion{
+    padding: 0 60px;
+    width: 400px;
+}
+.sipnosis p{
+    color: rgba(255, 255, 255, 0.932);
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 15px;
+}
+.ver{
+    display: flex;
+    justify-content: left;
+    padding: 20px 0;
+}
+.boton button{
+    background-color: rgb(255, 174, 0);
+    margin-right: 10px;
+    padding: 7px 30px;
+    border: 2px outset rgb(0, 0, 0);
+    box-shadow: 0 5px 10px rgb(0, 0, 0);
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boton img{
+    width: 20px;
+}
+.boton a{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.boton button:hover{
+    transform: scale(1.1);
+}
+.guardar button{
+    padding: 4.5px;
+    display: flex;
+    text-align: center;
+    background: transparent;
+    border: 3px outset rgb(0, 0, 0);
+    transition: transform 0.5s;
+}
+.guardar button:hover {
+    transform: scale(1.1);
+    background: rgb(0, 0, 0);
+    border: 3px outset rgb(255, 174, 0);
+}
+.guardar button img{
+    width: 25px;
+}
+.relleno{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 -90px 100px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-bottom: 35px;
+}
+.titulo{
+    padding: 0 10px;
+}
+.titulo h2{
+    font-family: "Permanent Marker", cursive;
+    color: white;
+}
+.titulo p{
+    font-family: "Exo 2", sans-serif;
+    color: rgb(94, 94, 94);
+    font-weight: 500;
+    color: white;
+    padding-bottom: 10px;
+}
+.carrusel{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    padding: 5px 0;
+}
+.car{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.car img{
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    padding: 0 10px;
+}
+.car h2{
+    font-family: "Permanent Marker", cursive;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+}
+.carrusel::-webkit-scrollbar {
+    height: 8px;
+}
+.carrusel::-webkit-scrollbar-track {
+    background-color: rgb(82, 82, 82);
+}
+.carrusel::-webkit-scrollbar-thumb {
+    background:rgb(255, 208, 0);
+}
+.carrusel2{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    align-items: center;
+    height: 350px;
+}
+.relleno2{
+    background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.178), rgba(0, 0, 0, 0.61)), url("../fondos/gamer.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.titulo2 {
+    padding: 0 10px;
+}
+
+.titulo2 h2 {
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 35px;
+}
+
+.titulo2 p {
+    font-family: "Exo 2", sans-serif;
+    color: rgb(94, 94, 94);
+    font-weight: 500;
+    color: white;
+    padding-bottom: 10px;
+}
+.juegos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background:yellow;
+    height: 70px;
+    border-bottom: 4px solid rgb(255, 255, 255);
+    border-top: 4px solid rgb(255, 255, 255);
+}
+.juegos img{
+    width: 360px;
+    height:auto;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+.juegos img:hover{
+    transform: scale(1.1);
+}
+.juegos .img1{
+    width: 660px;
+}
+.juegos h2{
+    font-family: "Permanent Marker", cursive;
+    font-size:45px;
+    text-align: center;
+    width: 400px;
+    height: 200px;
+    margin-right: 50px;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+
+.carrusel2::-webkit-scrollbar {
+    height: 9px;
+}
+
+.carrusel2::-webkit-scrollbar-track {
+    background-color: rgb(82, 82, 82);
+}
+
+.carrusel2::-webkit-scrollbar-thumb {
+    background: rgb(255, 196, 0);
+}
+.mensajes{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    box-shadow: 0 15px 20px rgb(0, 0, 0);
+    position: relative;
+    z-index: 2;
+}
+.tiulo3 h2{
+    color: white;
+    font-family: "Permanent Marker", cursive;
+    padding: 0 10px;
+}
+.tiulo3 p{
+    color: white;
+    padding: 0 10px;
+    font-family: "Exo 2", sans-serif;
+    padding-bottom: 10px;
+}
+.frases {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.frases p {
+    width: 205px;
+    height: 160px;
+    padding: 10px;
+    background:transparent;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 5px rgb(212, 0, 0);
+    border: 2px outset white;
+    transition: transform 0.4s;
+}
+.frases p:hover{
+    transform: scale(1.1);
+    box-shadow: 0 5px 5px rgb(255, 196, 0);
+}
+.final{
+    background-color: black;
+    height: 100px;
+    box-shadow: 0 -30px 30px rgb(0, 0, 0);
+}
+footer{
+    background:radial-gradient(circle,black,rgba(39, 39, 39, 0.589));
+    border-bottom: 4px solid rgb(255, 255, 255);
+    border-top: 4px solid rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.der h2{
+    color: rgb(255, 255, 255);
+    font-family: "Permanent Marker", cursive;
+}
+.der li{
+    color: white;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.der li:hover{
+    color: yellow;
+}
+.der img{
+    width: 35px;
+    padding-right: 7px;
+}
+.der a{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+.der a:hover{
+    color: yellow;
+}
